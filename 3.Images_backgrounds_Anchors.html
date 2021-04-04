@@ -5,14 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images & Backgrounds</title>
+
+    <style>
+        .firstbackground{
+            box-sizing: border-box;
+            padding: 20px;
+            border: 5px solid rgb(63, 165, 160);
+            margin-top: 20px;
+            
+            width: 500px;   
+            background-color: rgb(192, 243, 240);   
+        }
+        .secondbackground{
+            box-sizing: border-box;
+            padding: 20px;
+            border: 5px solid rgb(165, 63, 134);
+            margin-top: 30px;
+            width: 500px;
+            height: 600px;
+
+            /* Notice how we have to add URL for the background image property */
+           background-image: url("https://source.unsplash.com/400x300/?birds,water,green");
+           background-repeat: no-repeat;
+           background-position: center;
+           
+        }
+
+
+    </style>
 </head>
 
 
 <body>
+
+<h2>Anchors</h2>
 <a href="www.google.in" target="_blank">This is google</a> <br>
 <a href="www.facebook.com" target="_blank">This is facebook</a><br>
 <a href="www.youtube.com" target="_blank">This is youtube</a><br>
 <a href="www.google.com" target="_blank">This is google</a><br>
+
+
+<h2>Images</h2>
+<img src="https://source.unsplash.com/500x300/?birds,water,green" alt="unsplash random images">
+
+
+
+<h2>Backgrounds</h2>
+<div class="firstbackground">
+    This is the First paragraph without an image
+</div>
+
+<div class="secondbackground">
+    This is the Second paragraph with an image
+</div>
+
+
 
 </body>
 </html>
