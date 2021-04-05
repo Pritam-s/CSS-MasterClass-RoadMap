@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists & Tables</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+
+        /* To let the borders collapse into one border, add the CSS border-collapse property:
+        
+        border-collapse is used to remove the extra borders surrounding the table elements.   */
+        border-collapse: collapse; 
+
+        padding: 5px;
+      }
+
+      td {
+          /* The table data elements are left-aligned by default */
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: square;
+      }
+
+      ol {
+        list-style-type: upper-roman;
+      }
+    </style>
+  </head>
+
+  <body>
+
+<!-- Lists starts here -->
+    <h1>Lists</h1>
+
+    <h3>Unordered list</h3>
+    <ul>
+      <li>Quinoa</li>
+      <li>Spirulina</li>
+      <li>Green tea</li>
+      <li>Aloe Vera</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+      <li>Quinoa</li>
+      <li>Spirulina</li>
+      <li>Green tea</li>
+      <li>Aloe Vera</li>
+    </ol>
+</div>
+<!-- Lists ends here -->
+
+
+
+<!-- Tables starts here -->
+
+<!-- HTML tables heirarchy 
+1.<tables>
+    2.<tr> - Table rows.
+        3.<th> - Table headings (Bold & centered)
+            4.<td> - Table data (regular and left-alligned)
+-->
+
+
+<div>
+    <h1>Tables</h1>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Roll No</th>
+      </tr>
+
+      <tr>
+        <td>Nikku</td>
+        <td>25</td>
+        <td>72</td>
+      </tr>
+
+      <tr>
+        <td>Nimmy</td>
+        <td>29</td>
+        <td>14</td>
+      </tr>
+
+      <tr>
+        <td>Suhani</td>
+        <td>9</td>
+        <td>47</td>
+      </tr>
+    </table>
+</div>    
+<!-- Tables ends here -->
+
+  </body>
+</html>
