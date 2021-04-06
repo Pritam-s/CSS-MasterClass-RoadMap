@@ -4,16 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet">
     <title>Display & Position</title>
 
     <style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    margin:auto;
+    display:block;
+    border: 2px solid burlywood;
+    width: 100%;
+}
+
+img{
+margin: auto;
+    width: 200px;
+    display: block;
+    padding: 10px;
+}
+
+h3{
+    margin: 0px;
+    text-align: center;
+
+}
+
+.container{
+    display: inline-block;
+    width: 100%;
+    /* border: 2px solid steelblue; */
+}
+
+.box{
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 33%;
+    border: 2px solid steelblue;
+    text-align: justify;
+}
+
 
     </style>
 </head>
 
 
 <body>
-    <h1>Display & Position</h1>
+    <header class="top">
+        <img src="https://source.unsplash.com/collection/190727/1600x900" alt="random unsplash image">
+        <h3>Display & Position</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4>Heading1</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ea perferendis rerum, qui optio provident. Reprehenderit provident quaerat voluptate laborum consequuntur tempore mollitia maiores rem. Quisquam dicta, magnam incidunt odit, hic necessitatibus, quidem vel illo enim et minus dolorem recusandae!</p>
+        </div>
+        <div class="box">
+            <h4>Heading2</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ea perferendis rerum, qui optio provident. Reprehenderit provident quaerat voluptate laborum consequuntur tempore mollitia maiores rem. Quisquam dicta, magnam incidunt odit, hic necessitatibus, quidem vel illo enim et minus dolorem recusandae!</p>
+        </div>
+        <div class="box">
+            <h4>Heading3</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ea perferendis rerum, qui optio provident. Reprehenderit provident quaerat voluptate laborum consequuntur tempore mollitia maiores rem. Quisquam dicta, magnam incidunt odit, hic necessitatibus, quidem vel illo enim et minus dolorem recusandae!</p>
+        </div>
+
+
+    </div>
 
     
 </body>
