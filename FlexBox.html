@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" media="screen and (max-width:640px)" href="phone.css"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet" />
+
+    <title>Flexbox</title>
+
+    <style>
+        html {
+            background-color: white;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+
+            padding: 10px;
+            justify-content:space-between;
+            width: 30%;
+
+            
+        }
+
+        .navbar ul li {
+            list-style-type: none;
+
+            padding-right: 20px;
+
+            /* border: 3px solid gray; */
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+        }
+
+
+
+        .container {
+            border: 2px solid purple;
+            padding: 5px;
+
+            display: flex;
+        }
+
+        .box {
+            border: 2px solid green;
+        }
+
+        .imgarticle{
+            display: flex;
+            align-items: center;
+
+            justify-content: center;
+            background-color: rgb(221, 182, 168);
+        }
+
+
+/* For Mobile Screens 0 to 640px */
+        @media screen and (max-width:640px) {
+            /* html{
+    filter: invert(1) hue-rotate(180deg);
+} */
+
+            .navbar ul {
+                display: flex;
+                flex-direction: column;
+
+                padding: 10px;
+                justify-content:space-around;
+                align-items: center;
+                width: 100%;
+                
+               
+            }
+
+            .container {
+                border: 5px solid red;
+
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                /* background-color: aquamarine; */
+            }
+
+            .box {
+                border: 5px solid rgb(150, 127, 255);
+            }
+
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p class="box" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio inventore ipsam facere,
+            culpa incidunt dolores officia maxime laboriosam animi, vero soluta praesentium?</p>
+        <p class="box" id="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nemo, qui veniam
+            enim harum voluptate cumque sed nesciunt accusantium architecto odio cupiditate.</p>
+        <p class="box" id="box3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore nihil
+            magnam corporis. Explicabo culpa necessitatibus unde, consectetur commodi reiciendis voluptatum officiis?
+        </p>
+        <p class="box" id="box4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni eaque consequuntur
+            numquam rerum natus recusandae aperiam nihil nemo accusamus! Quibusdam, sunt labore?</p>
+    </div>
+
+    <article class="imgarticle">
+        <img src="https://source.unsplash.com/collection/190727/600x800" alt="">
+    </article>
+
+
+
+
+</body>
+
+</html>
