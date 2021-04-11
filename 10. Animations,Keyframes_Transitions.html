@@ -8,11 +8,12 @@
     <title>Keyframes and Animations</title>
 </head>
 <style>
-    .container {
-        background-color:rgb(236, 195, 255);
+    #container1 {
+        background-color:rgb(209, 195, 255);
+        border: 2px solid;
     }
 
-    .box {
+    #box1 {
         background-color:rgb(255, 101, 255);
         width: 250px;
         height: 250px;
@@ -22,7 +23,36 @@
         animation-name: nik2;
 
         animation-duration: 8s;
-        animation-iteration-count: 1;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse;  */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+
+    }
+
+    #container2 {
+        background-color:rgb(209, 195, 255);
+        border: 2px solid black;
+        margin-top: 300px;
+        height: 250px;
+    }
+
+    #box2 {
+        background-color:rgb(255, 101, 255);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        
+        animation-name: nik1;
+        /* animation-name: nik2; */
+
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
         /* animation-fill-mode: alternate; */
         /* animation-timing-function: ease-in-out; */
         /* animation-delay: 3s; */
@@ -65,8 +95,14 @@
 </style>
 
 <body>
-    <div class="container">
-        <div class="box">
+    <div id="container1">
+        <div id="box1">
+            This is a box
+        </div>
+    </div>
+    
+    <div id="container2">
+        <div id="box2">
             This is a box
         </div>
     </div>
