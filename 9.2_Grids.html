@@ -8,26 +8,31 @@
     <title>CSS Grids</title>
 
     <style>
-        .container {
+        #container1 {
             display: grid;
-            border: 2px solid rgb(170, 170, 170);
+            border: 2px solid rgb(255, 160, 160);
 
             /* grid-template-columns (GTC) STARTS*/
-            grid-template-columns: 5fr 4fr 8fr 3fr;  /* grid-template-columns - in 'fr' */
-            /* grid-template-columns: 300px 500px 200px; */ /* grid-template-columns - in 'px'; */
+            grid-template-columns: 5fr 4fr 8fr 3fr;
+            /* grid-template-columns - in 'fr' */
+            /* grid-template-columns: 300px 500px 200px; */
+            /* grid-template-columns - in 'px'; */
 
-            /* we can use value- 'auto' for GTC for any of one column */
+            /* we can use value- 'auto' for GTC for any of ONE column */
 
-            grid-gap: 1rem; /* Grid Gap Property */
+            grid-gap: 1rem;
+            /* Grid Gap Property */
+            /* grid-row-gap: ; */
+            /* grid-column-gap: ; */
             /* grid-template-columns (GTC) ENDS*/
 
 
             /* grid-template-rows (GTR) STARTS */
-            grid-template-rows: 4fr 6fr 2fr; /* grid-template-rows: in 'fr'; */
-            /* grid-template-rows: 200px 400px; */ /* grid-template-rows: in 'px'; */
-            
-
-            }
+            grid-template-rows: 4fr 6fr 2fr;
+            /* grid-template-rows: in 'fr'; */
+            /* grid-template-rows: 200px 400px; */
+            /* grid-template-rows: in 'px'; */
+        }
 
         .item {
             /* height: 200px;
@@ -35,13 +40,42 @@
             margin: 5px;
             padding: 5px;
             border: 2px solid rgb(127, 193, 255);
-            background-color: rgb(255, 211, 211);
+            background-color: rgb(211, 255, 211);
         }
+
+
+
+        /*Spanning multiple Rows and Columns  */
+        #container2{
+            margin-top: 20px;
+            border: 2px solid rgb(255, 160, 160);
+
+            display: grid;
+            grid-template-columns: 3fr 5fr 8fr;
+            grid-template-rows: 8fr 5fr 3fr;
+            
+        }
+
+        .box{
+            border: 2px solid rgb(160, 221, 173);
+            background-color: rgb(238, 212, 238);
+            margin: 5px;
+        }
+
+        .box:nth-child(4){
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+       /*  .box:nth-child(6){
+            grid-row-start: 3;
+            grid-row-end: 5;
+        } */
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div id="container1">
         <div class="item">This is item-1</div>
         <div class="item">This is item-2</div>
         <div class="item">This is item-3</div>
@@ -55,6 +89,23 @@
         <div class="item">This is item-11</div>
         <div class="item">This is item-12</div>
     </div>
+
+    <div id="container2">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div>
+    </div>
+
+
 </body>
 
 </html>
