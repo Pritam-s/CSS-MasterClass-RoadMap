@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+
+    <style>
+        .container {
+            display: grid;
+            border: 2px solid rgb(170, 170, 170);
+
+            /* grid-template-columns (GTC) STARTS*/
+            grid-template-columns: 5fr 4fr 8fr 3fr;  /* grid-template-columns - in 'fr' */
+            /* grid-template-columns: 300px 500px 200px; */ /* grid-template-columns - in 'px'; */
+
+            /* we can use value- 'auto' for GTC for any of one column */
+
+            grid-gap: 1rem; /* Grid Gap Property */
+            /* grid-template-columns (GTC) ENDS*/
+
+
+            /* grid-template-rows (GTR) STARTS */
+            grid-template-rows: 4fr 6fr 2fr; /* grid-template-rows: in 'fr'; */
+            /* grid-template-rows: 200px 400px; */ /* grid-template-rows: in 'px'; */
+            
+
+            }
+
+        .item {
+            /* height: 200px;
+            width: 200px; */
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid rgb(127, 193, 255);
+            background-color: rgb(255, 211, 211);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-11</div>
+        <div class="item">This is item-12</div>
+    </div>
+</body>
+
+</html>
