@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+
+    <style>
+        html {
+            font-size: 7px;
+
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            /* Have kept body padding and margin to */
+        }
+
+        .container {
+            border: 3px solid rgb(255, 176, 202);
+            font-size: 10px;
+            height: 100vh;
+            /* vh- It stands for viewport height. 
+            vh is equal to the 1/100 times of the viewport height. Example: Suppose height of the browser is 1000px, so 1vh is equaled to (1/100)*1000=10px.  */
+
+            width: 100vw;
+            /* vw- It stands for viewport width. Similar to vh,
+            vw is equal to the 1/100 times of the viewport width. Example: Suppose width of the browser is 1000px, so 1vw is equaled to (1/100)*1000=10px. */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 10px;
+            }
+
+        #firstheading {
+            font-size: 10em;
+            border: 2px solid paleturquoise;
+            /* em- Font-sizes are inherited relative to the parent element. 
+            10em means ten times of the parent element. */
+        }
+
+        #secondheading {
+            font-size: 10rem;
+            border: 2px solid paleturquoise;
+            /* rem- 
+            Font-size gets set according to the font-size of the root element. 
+            In general, <html>is the root element. 
+            In rem, "r"stands for "root." */
+        }
+
+        #thirdheading {
+            border: 2px solid paleturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="firstheading">This is first heading - em</h1>
+        <h1 id="secondheading">This is second heading - rem</h1>
+        <h1 id="thirdheading">This is third heading - not specified</h1>
+    </div>
+</body>
+
+</html>
