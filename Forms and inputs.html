@@ -14,11 +14,11 @@
             font-family: 'Source Sans Pro', sans-serif;
         }
 
-        .container{
+        .container {
             border: 2px solid paleturquoise
         }
 
-        .forms div{
+        .forms div {
             /* border: 2px solid palegreen; */
             margin: 20px;
             padding: 10px;
@@ -28,7 +28,7 @@
 
 <body>
 
-<!-- 
+    <!-- 
 The different input types are as follows:
 
 <input type="button">
@@ -60,42 +60,59 @@ The different input types are as follows:
         <form class="forms" action="file.php">
 
             <div>
-                Name (Text): <input type="text" name="nametext" id="name">
+                <label for="name">Name (Text): </label>
+                <!-- 
+                    Proper use of labels with the elements above will benefit:
+
+                Screen reader users (will read out loud the label, when the user is focused on the element).
+                
+                Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area). -->
+                <input type="text" name="nametext" id="name">
             </div>
 
             <div>
-                Email: <input type="email" name="myemail" id="email">
+                <label for="email">Email: </label>
+                <input type="email" name="myemail" id="email">
             </div>
 
             <div>
-                Color: <input type="color" name="mycolor" id="color">
+                <label for="color">Color: </label>
+                <input type="color" name="mycolor" id="color">
             </div>
 
             <div>
-                Date: <input type="date" name="date" id="date">
+                <label for="date">Date: </label>
+                <input type="date" name="date" id="date">
             </div>
 
             <div>
-                Date & Time: <input type="datetime" name="" id="">
+                <label for="datetime">DateTime: </label>
+                <input type="datetime" name="" id="datetime">
             </div>
 
             <div>
-                Number: <input type="number" name="" id="">
+                <label for="number">Number: </label>
+                <input type="number" name="" id="number">
             </div>
 
             <div>
-                Password: <input type="password" name="" id="">
+                <label for="password">Password: </label>
+                <input type="password" name="" id="password">
             </div>
 
             <div>
-                Range: <input type="range" name="" id="">
+                <label for="range">Range: </label>
+                <input type="range" name="" id="range">
             </div>
 
             <div>
-                checkbox: <input type="checkbox" name="" id="">
+                <label for="checkbox">Checkbox: </label>
+                <input type="checkbox" name="" id="">
             </div>
+
             <div>
-                Radio: <input type="radio" name="" id="">
+                <label for="radio">Radio: </label>
+                <input type="radio" name="" id="radio">
             </div>
 
 
